@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="bg-[#F1EAFF]">
+            <div class="flex justify-around">
+                <div class="flex gap-2 justify-center items-center">
+                    <img class="w-5 h-5" src="images/logo.webp" alt="">
+                    <h1 class="font-bold text-2xl">Paddy</h1>
+                </div>
+                <div class="gap-5 flex justify-center items-center">
+                    <a href="">Home</a>
+                    <a href="">Shop</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button class="border rounded-full bg-[#d9c7fa]"><img class="p-2 w-12"
+                            src="https://img.icons8.com/?size=50&id=37171&format=png" alt=""></button>
+                </div>
+            </div>
+        </nav>
+        <!--  -->
+        <nav class="bg-[#E5D4FF]">
+            <div>
+                <div class="text-center">
+                    <p class="font-bold p-3">Bringing Families Together ❤️‍🔥</p>
+                    <h1 class="font-bold text-4xl pb-3">Your Path to Adoption<br>Starts Here</h1>
+                    <p class="pb-5">It is a long established fact that a reader will be distracted by the readable
+                        content of a page when looking<br>at its layout. The point of using Lorem Ipsum is that it has
+                        a.</p>
+                    <button class="btn bg-[#c070b5]">View More</button>
+                </div>
+                <div class="pt-7 flex justify-center">
+                    <img class="" src="images/pet.webp" alt="">
+                </div>
+            </div>
+        </nav>
+        <main class="bg-[#DCBFFF]">
+            <div class="text-center">
+                <h1 class="font-bold text-3xl p-4">Adopt Your Best Friend</h1>
+                <p class="font-bold text-sm pb-4">It is a long established fact that a reader will be distracted by the
+                    readable content of a<br>page when looking at its layout. The point of using Lorem Ipsum is that it
+                    has a.</p>
+            </div>
+            <div class="flex justify-around">
+                <div class="flex justify-center items-center">
+                    <button id="buttondog" onclick="handleSearch('dog')" class=" btn border rounded-md font-bold px-6"><img class="w-9 h-9 "
+                            src="https://img.icons8.com/?size=40&id=30921&format=png" alt="">Dogs</button>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button id="buttoncat" onclick="handleSearch('cat')" class=" btn border rounded-full font-bold px-7"><img
+                            class="w-9 h-9 " src="https://img.icons8.com/?size=40&id=30909&format=png"
+                            alt="">Cats</button>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button id="buttonrabbit" onclick="handleSearch('rabbit')" class=" btn border rounded-md font-bold px-7"><img class="w-9 h-9 "
+                            src="https://img.icons8.com/?size=40&id=50551&format=png" alt="">rabbit</button>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button id="buttonbird" onclick="handleSearch('bird')" class=" btn border rounded-md font-bold px-6"><img class="w-9 h-9 "
+                            src="https://img.icons8.com/?size=80&id=101704&format=png" alt="">Birds</button>
+                </div>
+            </div>
+            <!-- spinner -->
+            <div class="flex justify-center">
+                <span id="spinner" class="loading loading-dots loading-lg hidden"></span>
+            </div>
+            <!-- spinner -->
+
+            <div class="flex justify-between pt-7 pb-9">
+                <div class="pl-16">
+                    <h1 class="font-bold text-3xl">Best Deal For you</h1>
+                </div>
+                <div class="pr-16">
+                    <button class="btn px-9  bg-[#c070b5] font-bold">Sort by price</button>
+                </div>
+            </div>
+            <!--  -->
+            <div id="card-pats" class=" flex bg-[] pb-7 ">
+                <div id="pats-container" class=" w-9/12 grid grid-cols-3 gap-4 pats-containers">
+
+                    <!--  -->
+
+                  
+                    <!--  -->
+
+                   
+                    <!--  -->
+                </div>
+                <div class="ml-4 border w-52 grid grid-cols-2">
+                    <div class="p-2">
+                        <img class="w-24 rounded-md" src="images/download.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-[#D0A2F7]">
+            <div class=" flex justify-around">
+                <div class="pb-4 pt-4">
+
+                    <div class="flex gap-2 items-center">
+                        <img class="w-5 h-5" src="images/logo.webp" alt="">
+                        <h1 class="font-bold text-2xl">Paddy</h1>
+                    </div>
+
+                    <div class="pt-5 pb-3">
+                        <p>Location: av. Washington 165, NY CA 54003</p>
+                        <p>Phone: +31 85 964 47 25</p>
+                        <p>Email: info@yourdomain.com</p>
+                        <p>Openings hours: 9.00 AM - 5.00 PM</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="pb-3">
+                    <h1 class="font-bold text-lg pb-4 pt-4">
+                        Useful Links
+                    </h1>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Animals</a>
+                        <a href="">Foundation</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class=" pb-4 pt-4">
+                    <div>
+                        <h1 class="font-bold text-lg">Drop a Message</h1>
+                    </div>
+                    <div class="pt-4">
+                        <input class="rounded-md w-full h-12 pl-2" type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="pt-3">
+                        <button class=" bg-[#c070b5] btn w-full font-bold">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </header>
+
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <div id="detail">
+             
+            </div>
+                   
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
