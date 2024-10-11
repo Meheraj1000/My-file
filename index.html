@@ -57,23 +57,27 @@
             </div>
             <div class="flex justify-around">
                 <div class="flex justify-center items-center">
-                    <button id="buttondog" onclick="handleSearch('dog')" class=" btn border rounded-md font-bold px-6"><img class="w-9 h-9 "
+                    <button id="buttondog" onclick="handleSearch('dog')"
+                        class=" btn border rounded-md font-bold px-6"><img class="w-9 h-9 "
                             src="https://img.icons8.com/?size=40&id=30921&format=png" alt="">Dogs</button>
                 </div>
                 <div class="flex justify-center items-center">
-                    <button id="buttoncat" onclick="handleSearch('cat')" class=" btn border rounded-full font-bold px-7"><img
-                            class="w-9 h-9 " src="https://img.icons8.com/?size=40&id=30909&format=png"
-                            alt="">Cats</button>
+                    <button id="buttoncat" onclick="handleSearch('cat')"
+                        class=" btn border rounded-full font-bold px-7"><img class="w-9 h-9 "
+                            src="https://img.icons8.com/?size=40&id=30909&format=png" alt="">Cats</button>
                 </div>
                 <div class="flex justify-center items-center">
-                    <button id="buttonrabbit" onclick="handleSearch('rabbit')" class=" btn border rounded-md font-bold px-7"><img class="w-9 h-9 "
+                    <button id="buttonrabbit" onclick="handleSearch('rabbit')"
+                        class=" btn border rounded-md font-bold px-7"><img class="w-9 h-9 "
                             src="https://img.icons8.com/?size=40&id=50551&format=png" alt="">rabbit</button>
                 </div>
                 <div class="flex justify-center items-center">
-                    <button id="buttonbird" onclick="handleSearch('bird')" class=" btn border rounded-md font-bold px-6"><img class="w-9 h-9 "
+                    <button id="buttonbird" onclick="handleSearch('bird')"
+                        class=" btn border rounded-md font-bold px-6"><img class="w-9 h-9 "
                             src="https://img.icons8.com/?size=80&id=101704&format=png" alt="">Birds</button>
                 </div>
             </div>
+            
             <!-- spinner -->
             <div class="flex justify-center">
                 <span id="spinner" class="loading loading-dots loading-lg hidden"></span>
@@ -85,25 +89,23 @@
                     <h1 class="font-bold text-3xl">Best Deal For you</h1>
                 </div>
                 <div class="pr-16">
-                    <button class="btn px-9  bg-[#c070b5] font-bold">Sort by price</button>
+                    <button id="sortPriceBtn" class="btn px-9  bg-[#c070b5] font-bold">Sort by price</button>
                 </div>
             </div>
             <!--  -->
             <div id="card-pats" class=" flex bg-[] pb-7 ">
-                <div id="pats-container" class=" w-9/12 grid grid-cols-3 gap-4 pats-containers">
+                <div id="pats-container" class=" w-9/12 grid grid-cols-3 gap-4">
 
                     <!--  -->
 
-                  
+
                     <!--  -->
 
-                   
+
                     <!--  -->
                 </div>
-                <div class="ml-4 border w-52 grid grid-cols-2">
-                    <div class="p-2">
-                        <img class="w-24 rounded-md" src="images/download.jfif" alt="">
-                    </div>
+                <div id="imgCountcard" class="ml-4 border w-52 grid grid-cols-2">
+                    
                 </div>
             </div>
         </main>
@@ -158,32 +160,17 @@
         </footer>
     </header>
 
-    <dialog id="my_modal_1" class="modal">
-        <div class="modal-box">
-            <div id="detail">
-             
-            </div>
-                   
-            <div class="modal-action">
-                <form method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
-                </form>
-            </div>
-        </div>
-    </dialog>
 
-    <dialog id="my_modal_2" class="modal">
-        <div class="modal-box">
-            <h3 class="text-lg font-bold">Hello!</h3>
-            <p class="py-4">Press ESC key or click outside to close</p>
-        </div>
-        <form method="dialog" class="modal-backdrop">
-            <button>close</button>
-        </form>
-    </dialog>
+    <div id="detail">
 
+    </div>
+
+    <div id="AdoptBoutton">
+       
+    </div>
+   
     <script src="index.js"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>
